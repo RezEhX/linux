@@ -1,0 +1,11 @@
+[Unit]
+Description=Run disk-report every five minutes
+Documentation=systemd.time(7)
+ 
+[Timer]
+OnCalendar=daily
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target
+OnCalendar=daily

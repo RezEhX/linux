@@ -1,0 +1,5 @@
+[0;4mNEXT                       [0m[0;4m [0m[0;4mLEFT[0m[0;4m [0m[0;4mLAST                       [0m[0;4m [0m[0;4m  PASSED[0m[0;4m [0m[0;4mUNIT             [0m[0;4m [0m[0;4mACTIVATES          [0m
+Fri 2026-09-25 00:00:00 UTC  17h Thu 2026-09-24 06:25:00 UTC 7min ago disk-report.timer disk-report.service
+
+[0;1;39m1 timers listed.[0m
+Pass --all to see loaded but inactive timers, too.
