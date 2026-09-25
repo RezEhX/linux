@@ -31,7 +31,11 @@ Persistent=true
 [Install]
 WantedBy=timers.target
 
-
+### `/usr/local/bin/disk-report.sh` (Final Implementation for Option B)
+```bash
+#!/bin/bash
+echo "=== $(date --iso-8601=seconds) ==="
+df -h /
 
 ## 2. Initial journal Error
 
