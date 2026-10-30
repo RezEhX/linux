@@ -1,0 +1,111 @@
+--- /home/workshop/before.txt	2026-10-30 06:06:39.341436797 +0000
++++ /home/workshop/after.txt	2026-10-30 06:13:08.099767107 +0000
+@@ -1,75 +1,18 @@
+-State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+-LISTEN 0      4096         0.0.0.0:55759      0.0.0.0:*          
+-LISTEN 0      50           0.0.0.0:445        0.0.0.0:*          
+-LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
+-LISTEN 0      64           0.0.0.0:35199      0.0.0.0:*          
+-LISTEN 0      50           0.0.0.0:139        0.0.0.0:*          
+-LISTEN 0      100          0.0.0.0:143        0.0.0.0:*          
+-LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+-LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          
+-LISTEN 0      100          0.0.0.0:110        0.0.0.0:*          
+-LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+-LISTEN 0      1024         0.0.0.0:80         0.0.0.0:*          
+-LISTEN 0      1024       127.0.0.1:11211      0.0.0.0:*          
+-LISTEN 0      64           0.0.0.0:2049       0.0.0.0:*          
+-LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+-LISTEN 0      100          0.0.0.0:995        0.0.0.0:*          
+-LISTEN 0      100          0.0.0.0:993        0.0.0.0:*          
+-LISTEN 0      100        127.0.0.1:25         0.0.0.0:*          
+-LISTEN 0      511        127.0.0.1:6379       0.0.0.0:*          
+-LISTEN 0      4096         0.0.0.0:38133      0.0.0.0:*          
+-LISTEN 0      4096         0.0.0.0:46253      0.0.0.0:*          
+-LISTEN 0      80         127.0.0.1:3306       0.0.0.0:*          
+-LISTEN 0      4096         0.0.0.0:54803      0.0.0.0:*          
+-LISTEN 0      50              [::]:445           [::]:*          
+-LISTEN 0      100            [::1]:25            [::]:*          
+-LISTEN 0      50              [::]:139           [::]:*          
+-LISTEN 0      100             [::]:143           [::]:*          
+-LISTEN 0      4096            [::]:111           [::]:*          
+-LISTEN 0      100             [::]:110           [::]:*          
+-LISTEN 0      1024            [::]:80            [::]:*          
+-LISTEN 0      511            [::1]:6379          [::]:*          
+-LISTEN 0      64              [::]:2049          [::]:*          
+-LISTEN 0      4096            [::]:22            [::]:*          
+-LISTEN 0      32                 *:21               *:*          
+-LISTEN 0      100             [::]:995           [::]:*          
+-LISTEN 0      100             [::]:993           [::]:*          
+-LISTEN 0      4096            [::]:58219         [::]:*          
+-LISTEN 0      1024           [::1]:11211         [::]:*          
+-LISTEN 0      4096           [::1]:631           [::]:*          
+-LISTEN 0      4096            [::]:50505         [::]:*          
+-LISTEN 0      4096            [::]:60621         [::]:*          
+-LISTEN 0      4096            [::]:59245         [::]:*          
+-LISTEN 0      64              [::]:46817         [::]:*          
++State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
++LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          
++LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          
++LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*          
++LISTEN 0      4096            [::]:22           [::]:*          
+   UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+-  apache-htcacheclean.service loaded active running Disk Cache Cleaning Daemon for Apache HTTP Server
+-  avahi-daemon.service        loaded active running Avahi mDNS/DNS-SD Stack
+   cron.service                loaded active running Regular background program processing daemon
+-  cups-browsed.service        loaded active running Make remote CUPS printers available locally
+-  cups.service                loaded active running CUPS Scheduler
+   dbus.service                loaded active running D-Bus System Message Bus
+-  dovecot.service             loaded active running Dovecot IMAP/POP3 email server
+-  fsidd.service               loaded active running NFS FSID Daemon
+   fwupd.service               loaded active running Firmware update daemon
+   getty@tty1.service          loaded active running Getty on tty1
+-  lighttpd.service            loaded active running Lighttpd Daemon
+-  mariadb.service             loaded active running MariaDB 10.11.14 database server
+-  memcached.service           loaded active running memcached daemon
+   ModemManager.service        loaded active running Modem Manager
+   multipathd.service          loaded active running Device-Mapper Multipath Device Controller
+-  nfs-blkmap.service          loaded active running pNFS block layout mapping daemon
+-  nfs-idmapd.service          loaded active running NFSv4 ID-name mapping service
+-  nfs-mountd.service          loaded active running NFS Mount Daemon
+-  nfsdcld.service             loaded active running NFSv4 Client Tracking Daemon
+-  nmbd.service                loaded active running Samba NMB Daemon
++  packagekit.service          loaded active running PackageKit Daemon
+   polkit.service              loaded active running Authorization Manager
+-  postfix@-.service           loaded active running Postfix Mail Transport Agent (instance -)
+-  redis-server.service        loaded active running Advanced key-value store
+-  rpc-statd.service           loaded active running NFS status monitor for NFSv2/3 locking.
+-  rpcbind.service             loaded active running RPC bind portmap service
+   rsyslog.service             loaded active running System Logging Service
+-  smbd.service                loaded active running Samba SMB Daemon
+-  snmpd.service               loaded active running Simple Network Management Protocol (SNMP) Daemon.
+   ssh.service                 loaded active running OpenBSD Secure Shell server
+   systemd-journald.service    loaded active running Journal Service
+   systemd-logind.service      loaded active running User Login Management
+@@ -77,19 +20,17 @@
+   systemd-resolved.service    loaded active running Network Name Resolution
+   systemd-timesyncd.service   loaded active running Network Time Synchronization
+   systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+-  tftpd-hpa.service           loaded active running LSB: HPA's tftp server
+   udisks2.service             loaded active running Disk Manager
+   unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+   upower.service              loaded active running Daemon for power management
+   user@1000.service           loaded active running User Manager for UID 1000
+-  vsftpd.service              loaded active running vsftpd FTP server
+ 
+ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+         ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+         SUB    → The low-level unit activation state, values depend on unit type.
+ 
+-41 loaded units listed.
+-908
++20 loaded units listed.
++797
+ /usr/lib/openssh/ssh-keysign
+ /usr/lib/polkit-1/polkit-agent-helper-1
+ /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+@@ -103,4 +44,3 @@
+ /usr/bin/newgrp
+ /usr/bin/sudo
+ /usr/bin/chsh
+-/usr/sbin/mount.nfs
