@@ -14,7 +14,8 @@ Full TCP port audit executed across all 65,535 ports:
 sudo nmap -sS -sV -p- -n 192.168.100.10
 mkdir -p ~/linux/kali && \
 cp ~/linux[4-7].* ~/linux/kali/ 2>/dev/null || cp ~/Pictures/Screenshots/* ~/linux/kali/ 2>/dev/null && \
-cat << 'EOF' > ~/linux/kali/README.md
+cat << 'EOF' > ~/linux/kali/README.md```
+
 # Penetration Testing & Security Audit Report
 
 ## 1. Environment & Architecture
