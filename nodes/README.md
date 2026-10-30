@@ -8,6 +8,8 @@ I dumped the initial bloated system state into `before.txt`, stripped out the un
 - Post-hardening baseline: [`after.txt`]
 - Full diff: [`diff.txt`]
 
+![Proof2](./linux2.png)
+![Proof1](./linux3.png)
 ```diff
 --- ~/before.txt
 +++ ~/after.txt
